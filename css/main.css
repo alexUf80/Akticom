@@ -1,0 +1,257 @@
+html, body{
+	height: 100%;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+	background-color: rgb(230, 230, 230);
+} 
+
+tr:nth-child(2n) {
+    background-color: rgb(245, 245, 245);
+} 
+
+th {
+    background-color: rgb(198, 226, 202);
+}
+
+a{
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: rgb(162, 181, 162);
+	border-radius: 5px;
+	border: 1px  solid rgb(76, 76, 76);
+	color: rgb(20, 20, 20);
+}
+a:hover{
+	background-color: rgb(152, 169, 153);
+}
+
+button, input[type=submit]{
+	background-color: rgb(162, 181, 162);
+	border: 1px  solid rgb(76, 76, 76);
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+input[type=submit]{
+	width: 100px;
+	align-self: center;
+}
+
+.container{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	max-width: 1500px;
+	margin: 0 auto;
+	
+}
+
+.container-wripper{
+	flex: 1 1 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	font-weight: bold;
+	margin: 0 0 20px 0;
+	background-color: rgb(182, 197, 157);
+}
+
+.logo{
+	font-size: 30px;
+}
+
+.buttons{
+	padding: 15px;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttons button{
+	margin: 0 5px;
+	padding: 5px 10px;
+}
+
+.footer{
+	background-color: rgb(182, 197, 157);
+	padding: 20px;
+}
+
+.form-message{
+	background-color: rgb(167 222 176);
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.modal.close{
+	display: none;
+}
+
+.modal {
+	background-color: rgba(16, 16, 16, 0.683);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding: 30px 0;
+}
+
+.modal-window {
+	position: relative;
+    min-width: 100px;
+    max-width: 100%;
+	height: 170px;
+	background-color: rgb(243, 243, 243);
+	border-radius: 5px;
+}
+
+.modal-content{
+	margin: 15px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.page404{
+	height: 100%;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.api{
+	height: 100%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.api div{
+	margin: 15px 0;
+}
+
+.pagination{
+	display: flex;
+}
+
+.pagination.hidden{
+	display: none;
+}
+
+.pagination-numbers{
+	display: flex;
+	align-items: flex-end;
+}
+
+.pagination-prev, .pagination-next, .pagination-number, .pagination-dots{
+	margin: 10px;
+}
+
+.pagination-prev, .pagination-next, .pagination-number{
+	cursor: pointer;
+	border: 2px solid gray;
+	padding: 10px;
+}
+
+.pagination-prev:hover, .pagination-next:hover, .pagination-number:hover{
+	background-color: rgb(231, 231, 231);
+}
+
+.pagination-number{
+	margin: 10px 5px;
+}
+
+.pagination-number.current{
+	background-color: silver;
+	cursor: auto;
+}
+
+.spinner{
+	height: 100px;
+}
+
+.file-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input__wrapper {
+	width: 100%;
+	position: relative;
+	margin: 15px 0;
+	text-align: center;
+  }
+   
+  .input__file {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+  }
+   
+  .input__file-icon-wrapper {
+	height: 60px;
+	width: 60px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	border-right: 1px solid #fff;
+  }
+   
+  .input__file-button-text {
+	line-height: 1;
+	margin-top: 1px;
+	width: 100%;
+  }
+   
+  .input__file-button {
+	width: 100%;
+	max-width: 490px;
+	height: 60px;
+	background: #7d9391;
+	color: #fff;
+	font-size: 1.125rem;
+	font-weight: 700;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: start;
+		-ms-flex-pack: start;
+			justify-content: flex-start;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 0 auto;
+  }
